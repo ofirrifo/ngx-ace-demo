@@ -1,14 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import {NgxAceModule} from '@rifo/ngx-ace';
+
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    NgxAceModule
+  ],
   declarations: [
     AppComponent
-  ],
-  imports: [
-    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
